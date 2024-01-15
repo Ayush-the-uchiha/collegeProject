@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Step2</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            background-image: url("car.jpg");
+            background-size: cover;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .realForm{
+            min-height: 350px;
+            width: 350px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: fixed;
+            backdrop-filter: blur(7px);
+            /* margin-left: 100px; */
+        }
+        /* div inputs starts */
+        .heading{
+            text-align: center;
+            color: white;
+            line-height: 37px;
+        }
+        .inputs{
+            /* border: 1px solid cyan; */
+            margin: 20px 0px;
+        }
+        .input{
+            width: 240px;
+            height: 21px;
+            background-color: transparent;
+            outline: none;
+            color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            text-align: center;
+            /* border: 1px ridge ; */
+        }
+        .input::placeholder{
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+        }
+        #btn{
+            width: 244px;
+            height: 26px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+        #btn:hover{
+            color: rgb(222, 197, 197);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="realForm">
+
+            <!-- Form started -->
+
+            <form action="#">
+                <h1 align="center" class="heading">Login</h1>
+                <h4 align="center" class="heading">Step 2</h4>
+
+                <!-- Email address input -->
+                <div class="inputs">
+                    <input type="email" class="input" id="MobileNum" placeholder="Enter Your Email Address">
+                </div>
+
+                <!-- password input -->
+                <div class="inputs">
+                    <input type="password" class="input" id="MobileNum" placeholder="Enter your password">
+                </div>
+
+                <!-- Mobile number input -->
+                <div class="inputs">
+                    <input type="text" class="input" id="DOB" placeholder="Enter your Mobile Number">
+                </div>
+
+                <!-- DOB input -->
+                <div class="inputs">
+                   <a href="step3.html">
+                        <input type="button" id="btn" value="Next step" onclick="g()">
+                   </a> 
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

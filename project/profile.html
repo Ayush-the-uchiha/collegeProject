@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your profile</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            /* font-family: cursive; */
+        }
+
+        .container {
+            background-image: url("car.jpg");
+            background-size: cover;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .realForm {
+            height: 350px;
+            width: 350px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+            position: fixed;
+            backdrop-filter: blur(15px);
+        }
+
+        .img {
+            width: 70px;
+            height: 70px;
+            display: block;
+            margin: 8px auto 2px;
+            border-radius: 50%;
+        }
+
+        .desc {
+            height: 100;
+        }
+
+        p {
+            height: 100%;
+            padding: 7px 8px;
+            color: white;
+            margin-left: 5px;
+        }
+
+        span {
+            color: grey;
+        }
+        
+        .data {
+            color: white;
+            text-shadow: 2px 2px 14px rgb(159, 57, 57);
+            
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 14px RED;
+        }
+
+        #btn {
+            /* border: 1px solid rgba(255, 0, 0, 0.5); */
+            padding: 10px;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(0, 0, 0, 0.5);
+            transform: 0.8s;
+        }
+
+        #btn:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="realForm">
+
+            <!-- Form started -->
+            <!-- DOB input -->
+            <div .realForm>
+                <h1 style="">My Profile</h1>
+                <div class="profileImage">
+                    <!-- <img src="Giyu_tomiyoka.jpg" class="img" alt="DP"> -->
+                    <img src="ayush.jpg" class="img" alt="DP">
+                </div>
+                <div class="desc">
+                    <p>
+                        <span>Name: </span>
+                        <span class="data">Ayush kumar</span>
+                    </p>
+
+                    <p>
+                        <span>Date of Birth: </span>
+                        <span class="data">16/08/2005</span>
+                    </p>
+
+
+                    <p>
+                        <span>Status: </span>
+                        <span class="data">Unmarried</span>
+                    </p>
+
+
+                    <p>
+                        <span>Address: </span>
+                        <span class="data">E.D 299 A.D.A Collony, Naini, Prayagraj</span>
+                    </p>
+
+
+                    <p>
+                        <span>Mobile number: </span>
+                        <span class="data">7991497848</span>
+                    </p>
+
+
+                    <p>
+                        <span>Email Id: </span>
+                        <span class="data">ak9299@gmail.com</span>
+                    </p>
+                    <a href="index.html" id="btn">Sign-out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
