@@ -261,6 +261,9 @@ h1{
 #input2{
     padding: 35px 0px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     row-gap: 15px;
 }
 
@@ -289,3 +292,8 @@ footer{
     font-weight: 400;
 }
 
+.inputbox{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
