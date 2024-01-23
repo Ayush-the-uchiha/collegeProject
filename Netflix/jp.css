@@ -165,7 +165,7 @@ nav .navRight {
     /* border: 1px solid green; */
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
+    align-items: center;
     max-width: 90vw;
     margin: auto;
     flex-wrap: wrap;
