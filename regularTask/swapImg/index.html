@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swap</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        img{
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+        .secondContainer{
+            /* border: 1px solid red; */
+            width: 250px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #btn{
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="firstCotainer">
+
+            <img src="mahiru.jpg" id="first" alt="" srcset="">
+            <img src="waguri.jpg" id="sec" alt="" srcset="">
+        </div>
+        <div class="thirdContainer">
+            <img src="firstGirl.jpg" id="third" alt="" srcset="">
+            <img src="secGirl.jpg" id="fourth" alt="" srcset="">
+            
+        </div>
+        <div class="secondContainer">
+            <button id="btn" onclick="swap()">Swap</button>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script>
+        let first = document.getElementById("first").src;
+        // alert("this is "+first)
+        let second = document.getElementById("sec").src;
+        let third = document.getElementById("third").src;
+        let fourth = document.getElementById("fourth").src;
+
+        function swap(){
+            let temp = first;
+            first = second;
+            second = fourth;
+            fourth = third;
+            third = temp;
+
+            document.getElementById("first").src = first;
+            document.getElementById("sec").src = second;
+            document.getElementById("third").src = third;
+            document.getElementById("fourth").src = fourth;
+        }
+    </script>
+</body>
+</html>
