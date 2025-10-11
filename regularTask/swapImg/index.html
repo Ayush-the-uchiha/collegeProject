@@ -63,10 +63,10 @@
 
         function swap(){
             let temp = first;
-            first = second;
-            second = fourth;
-            fourth = third;
-            third = temp;
+            first = third;
+            second = temp;
+            fourth = second;
+            third = fourth;
 
             document.getElementById("first").src = first;
             document.getElementById("sec").src = second;
@@ -75,4 +75,5 @@
         }
     </script>
 </body>
+
 </html>
